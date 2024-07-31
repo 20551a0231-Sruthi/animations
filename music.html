@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .music{
+            background-image: url(./movie.jpg);
+            width: 100%;
+            height: 98vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bar1{
+            width: 20px;
+            height: 2px;
+            position: fixed;
+            bottom: 20px;
+            right: 250px;
+            animation: bar1 2s linear 0.4s infinite;
+        }
+        @keyframes bar1{
+            0%{
+                height: 0px;
+                background-color: blue;
+            }
+            50%{
+                height: 200px;
+                background-color: red;
+            }
+            100%{
+                height: 0px;
+                background-color: blue;
+            }
+        }
+
+        .bar2{
+            width: 20px;
+            height: 2px;
+            position: fixed;
+            bottom: 20px;
+            right: 220px;
+            animation: bar2 1s linear 0.3s infinite;
+        }
+        @keyframes bar2{
+            0%{
+                height: 0px;
+                background-color: rgb(119, 44, 100);
+            }
+            50%{
+                height: 180px;
+                background-color: rgb(142, 172, 82);
+            }
+            100%{
+                height: 0px;
+                background-color: rgb(119, 44, 100);
+            }
+        }
+
+        .bar3{
+            width: 20px;
+            height: 2px;
+            position: fixed;
+            bottom: 20px;
+            right: 190px;
+            animation: bar3 1.6s linear 0.3s infinite;
+        }
+        @keyframes bar3{
+            0%{
+                height: 0px;
+                background-color: rgb(224, 139, 64);
+            }
+            50%{
+                height: 220px;
+                background-color: rgb(119, 139, 249);
+            }
+            100%{
+                height: 0px;
+                background-color: rgb(224, 139, 64);
+            }
+        }
+
+        .bar4{
+            width: 20px;
+            height: 2px;
+            position: fixed;
+            bottom: 20px;
+            right: 160px;
+            animation: bar4 0.7s linear 0.3s infinite;
+        }
+        @keyframes bar4{
+            0%{
+                height: 0px;
+                background-color: rgb(98, 230, 197);
+            }
+            50%{
+                height: 185px;
+                background-color: rgb(154, 80, 191);
+            }
+            100%{
+                height: 0px;
+                background-color: rgb(98, 230, 197);
+            }
+        }
+
+        .bar5{
+            width: 20px;
+            height: 2px;
+            position: fixed;
+            bottom: 20px;
+            right: 130px;
+            animation: bar5 1s linear 0.3s infinite;
+        }
+        @keyframes bar5{
+            0%{
+                height: 0px;
+                background-color: rgb(157, 224, 64);
+            }
+            50%{
+                height: 200px;
+                background-color: rgb(204, 13, 160);
+            }
+            100%{
+                height: 0px;
+                background-color: rgb(157, 224, 64);
+            }
+        }
+
+        .bar6{
+            width: 20px;
+            height: 2px;
+            position: fixed;
+            bottom: 20px;
+            right: 100px;
+            animation: bar3 0.9s linear 0.3s infinite;
+        }
+        @keyframes bar3{
+            0%{
+                height: 0px;
+                background-color: rgb(49, 68, 58);
+            }
+            50%{
+                height: 170px;
+                background-color: rgb(204, 124, 137);
+            }
+            100%{
+                height: 0px;
+                background-color: rgb(49, 68, 58);
+            }
+        }
+        h3{
+            position: fixed;
+            right: 100px;
+            top: 50px;
+        }
+        audio{
+            position: fixed;
+            right: 20px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="music">
+        <h3>Seetakalam.mp3</h3>
+        <audio controls muted>
+            <source src="./Seethakaalam - SenSongsMp3.Co.mp3">
+        </audio>
+        <div class="bar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+        </div>
+    </div>
+</body>
+</html>
